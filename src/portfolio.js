@@ -16,17 +16,14 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
-  username: "martinhuszti",
-  title: "Hi, I'm Martin,",
-  subTitle: emoji(
-    `a well-rounded, hardworking Cyber Security master’s student with 3.5+ years of professional software engineer experience 💪.
-    Currently doing my final semester in University of Turku 🎓, but I'm living in Helsinki 🏙.
-    I'm mostly focused on mobile application development 📱 (both native and cross platform), but full-stack development is also a strong side of mine.`
-  ),
+  username: "Martin Huszti",
+  title: "Hi, I'm Martin Huszti",
+  subTitle:
+    "Senior Mobile Developer with 6+ years of experience delivering Android and iOS solutions across healthcare, media, and R&D domains. Specialized in mobile architecture, clean code, and CI/CD automation, driving secure and scalable mobile solutions from concept to release.",
   resumeLink: null, // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -36,37 +33,31 @@ const greeting = {
 const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/martinhuszti/",
   github: "https://github.com/martinhuszti",
-  // gmail: "martin",
   gitlab: "https://gitlab.com/martinhuszti",
-  // facebook: "https://www.facebook.com/huszti.martin",
-  // medium: "https://medium.com/@saadpasta",
-  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
 const skillsSection = {
-  title: "What I do",
-  subTitle:
-    "Full-stack development 💻 but my favourite part is mobile development 📱",
-  skills: [],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+  title: "Skills",
+  skills: [
+    emoji("📱 Mobile Development: Android (Kotlin/Java), iOS (Swift), and cross-platform solutions with Flutter and React Native."),
+    emoji("📐 Architecture & Design: Expertise in Clean Architecture, MVVM/MVI, and dependency injection patterns for scalable, maintainable code."),
+    emoji("🚀 CI/CD & DevOps: Automating build, test, and deployment pipelines using GitLab CI, Docker, and Firebase."),
+    emoji("☁️ Backend & Cloud: Building and deploying backend services with Node.js and leveraging Firebase and AWS for cloud infrastructure.")
+  ],
 
   softwareSkills: [
     {
-      skillName: "kotlin/ java",
+      skillName: "android",
       fontAwesomeClassname: "fab fa-android"
     },
     {
-      skillName: "react-native",
-      fontAwesomeClassname: "fas fa-mobile"
+      skillName: "swift",
+      fontAwesomeClassname: "fab fa-apple"
     },
     {
-      skillName: "reactjs",
+      skillName: "react native",
       fontAwesomeClassname: "fab fa-react"
     },
     {
@@ -74,46 +65,28 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-mobile-alt"
     },
     {
-      skillName: "dart",
-      fontAwesomeClassname: "fas fa-meteor"
-    },
-    {
-      skillName: "nextjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: `type- javascript`,
+      skillName: "typescript",
       fontAwesomeClassname: "fab fa-js-square"
     },
     {
-      skillName: "express",
-      fontAwesomeClassname: "fab fa-node-js"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      skillName: "gitlab ci",
+      fontAwesomeClassname: "fab fa-gitlab"
     },
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "firebase",
+      fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "node js",
+      fontAwesomeClassname: "fab fa-node-js"
+    },
+    {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -130,57 +103,33 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "University of Turku",
+      schoolName: "University of Trento - University of Turku",
       logo: require("./assets/logos/turku.jpg"),
-      subHeader: "Cyber Security - Master of Science | EIT Double Degree",
-      duration: "September 2021 - July 2022",
-      desc: `Thesis about Security Analysis of Android Applications`,
-      desc2: `Specialization in Security of Networked Systems took courses on:`,
+      subHeader: "Master's Double Degree in EIT Digital - Cyber Security",
+      duration: "Sep 2020 - Jun 2022",
+      desc: "Focused on Cyber Security, covering areas such as firewalls, privacy and intellectual property rights, secure IoT and sensor network systems, security engineering, multimedia data protection, and network security.",
       descBullets: [
-        "Security Engineering",
-        "Secure Sensor Network Systems",
-        "Protocol Processing and Security",
-        "Firewall and IPS Technology",
-        "Innovation and Entrepreneurship Studies"
-      ]
-    },
-    {
-      schoolName: "KTH Royal Institute of Technology",
-      logo: require("./assets/logos/kth.svg"),
-      subHeader: "EIT Digital Summer School",
-      duration: "August 2021 - 2 weeks",
-      desc: "Certificate of Program Completion | Internet of Things and Business Transformation",
-      descBullets: [
-        "Solving bridge monitoring problems in the infrastructure sector with IoT"
-      ]
-    },
-    {
-      schoolName: "University of Trento",
-      logo: require("./assets/logos/untin.png"),
-      subHeader: "Cyber Security - Master of Science | EIT Double Degree",
-      duration: "September 2020 - August 2021",
-      desc: `Took courses on:`,
-      descBullets: [
-        "Introduction to Computer and Network Security",
-        "Security Testing",
-        "Privacy and Intellectual Property Rights",
-        "Network Security",
-        "Multimedia Data Security",
-        "Cyber Security Risk Assessment",
-        "Innovation and Entrepreneurship",
-        "Business Development Laboratory"
+        "Authored my thesis on Security Analysis of Android Applications.",
+        "The thesis has been cited multiple times in IEEE publications.",
+        "One of the citing papers was showcased at the CCNCPS Conference in Dubai, highlighting the research’s academic relevance and international recognition."
       ]
     },
     {
       schoolName: "Budapest University of Technology and Economics",
       logo: require("./assets/logos/bme.jpeg"),
-      subHeader: "Computer Engineering - Bachelor of Science",
-      duration: "September 2016 - February 2020",
-      desc: "Specialization in Mobile Technologies",
+      subHeader: "Bachelor's degree in Computer Engineering",
+      duration: "Sep 2016 - Jun 2020",
+      desc: "Specialized in Automation and Applied Informatics, focusing on mobile application development.",
       descBullets: [
-        "Thesis about Modern Architectures and Technologies in Android Development",
-        "Extra courses on Advanced Android, IOS, and NodeJS server development"
+        "Authored a thesis on Android application development, emphasizing modern architectures and cutting-edge technologies."
       ]
+    },
+    {
+      schoolName: "KTH Royal Institute of Technology",
+      logo: require("./assets/logos/kth.png"),
+      subHeader: "Summer School in IoT and Business Transformation",
+      duration: "Aug 2021",
+      desc: ""
     }
   ]
 };
@@ -212,123 +161,87 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Dream Broker Oy",
-      companylogo: require("./assets/logos/dreambroker.png"),
-      companyLink: "https://dreambroker.com/",
-      date: "Nov 2021 – Present",
-      desc: "Leading android application development",
+      role: "Senior Mobile Developer",
+      company: "BeeHealthy",
+      companylogo: require("./assets/logos/beehealthy.png"),
+      companyLink: "https://beehealthy.com/",
+      date: "Oct 2022 - Present",
+      desc: "Private and Public Healthcare SaaS",
       descBullets: [
-        "In Kotlin and Java language",
-        "Security analysis and penetration testing",
-        "MVVM architecture (reactive and observable approaches)",
-        "Data- and View binding",
-        "Coroutines",
-        "Dependency injection",
-        "Persistent and secured data storing and synchronization",
-        "Notification handling"
+        "Leading mobile development for Bookings, Surveys, and Attachment modules across 19 mobile apps in 8 countries with over 800,000 installs.",
+        "Implemented 3rd-party digital triage using KrakenD and Infermedica.",
+        "Optimized mobile CI/CD pipelines in Gitlab CI (static analysis, caching)."
+      ]
+    },
+    {
+      role: "Software Engineer (mobile focused)",
+      company: "Dream Broker",
+      companylogo: require("./assets/logos/dreambroker.png"),
+      companyLink: "https://dreambroker.com/products/one/",
+      date: "Nov 2021 - Oct 2022",
+      desc: "Secure Online Video Software",
+      descBullets: [
+        "Full-cycle development and deployment of the Dream Broker One mobile app.",
+        "Enhanced offline support, and real-time chat communication using WebSocket.",
+        "Introduced modern Android technologies such as Jetpack Compose, Dagger Hilt, Coroutines, Flows and WorkManager."
       ]
     },
     {
       role: "Mobile Architect",
-      company: "ohhi world Startup",
+      company: "Ohhi",
       companylogo: require("./assets/logos/ohhi.png"),
-      companyLink: "https://ohhi.world/",
-      date: "Feb 2021 – Nov 2021",
-      desc: "Leading mobile (iOS and Android) and backend development with Flutter and Firebase technology",
+      companyLink: "https://www.ohhi.world/",
+      date: "Feb 2021 - Nov 2021",
+      desc: "Social Media Platform Startup",
       descBullets: [
-        "Cross platform mobile application in Flutter",
-        "Headless backend implementation with Firebase",
-        "Navigation,  Dependency Injection and State handling with GetX flutter library",
-        "SMS-OTP based authentication with Firebase",
-        "Cloud Firestore",
-        "Cloud Function",
-        "Real-time data sync-update",
-        "Secured communication and authorization between mobile application and firebase"
+        "Led Flutter mobile app development, leveraging GetX for state management, navigation, and dependency injection.",
+        "Built a headless Google Firebase backend using Cloud Firestore, Cloud Functions, and SMS-OTP authentication.",
+        "Ensured real-time data synchronization, secure communication, and scalable architecture."
       ]
     },
     {
-      role: "Full Stack Developer",
-      company: "Develops Hungary Kft.",
+      role: "Full Stack Developer (React Native Focused)",
+      company: "Develops.hu",
       companylogo: require("./assets/logos/develops.png"),
-      companyLink: "https://develops.hu/",
-      date: "June 2020 – Nov 2021",
-      desc: "Full Stack development with modern technologies, mostly focused on mobile side",
+      companyLink: "https://develops.hu/en",
+      date: "Jun 2020 - Nov 2021",
+      desc: "Consulting",
       descBullets: [
-        "Participated in more than 10 projects including mobile, web, and backend solutions",
-        "Led 5 different mobile development projects",
-        "Created multiple software solutions for companies",
-        "Web payment integration",
-        "AWS headless backend integration"
+        "Delivered 10+ full-stack projects, led 5 mobile apps, integrated secure web payments, and built scalable AWS-based headless backends.",
+        "Cross-platform mobile development with React Native.",
+        "Backend services using Node.js, Express and MySQL."
       ]
     },
     {
-      role: "Software Engineer",
+      role: "Research and Development Engineer (part-time)",
       company: "Nokia Bell Labs",
       companylogo: require("./assets/logos/nokia.png"),
-      companyLink: "https://www.bell-labs.com/",
-      date: "Jan 2020 – June 2020",
-      desc: "Worked in various Research & Development projects",
+      companyLink: "https://www.nokia.com/bell-labs/",
+      date: "Jan 2020 - Jun 2020",
+      desc: "Research and Innovation",
       descBullets: [
-        "Main Android developer for a research project",
-        "Koin dependency injection framework",
-        "Kotlin Coroutines",
-        "Android tablet application optimization",
-        "Custom protocol design and implementation",
-        "Custom real-time communication with IOT device through TCP",
-        "Software engineer in robot programming",
-        "Raspberry Pi programming with python",
-        "Real time communication with Android device",
-        "Software engineer in Unreal Engine 4 game development project",
-        "Unreal Engine 4 game development with Map design and simulation implementation"
+        "Led Android development for a research project optimized for tablets.",
+        "Designed custom communication protocols and enabled real-time TCP communication between Android and IoT devices.",
+        "Developed robotic systems using Python with real-time communication."
       ]
     },
     {
-      role: "Junior Android Developer",
-      company: "Vodafone Hungary",
+      role: "Junior Android Developer (part-time)",
+      company: "Vodafone",
       companylogo: require("./assets/logos/vodafone.png"),
-      companyLink: "https://www.vodafone.hu/",
-      date: "Sept 2019 – Jan 2020",
-      desc: "Created frontend Android application using VIPER and MVVM architectures with an agile software development team",
-      descBullets: [
-        "Modern technologies",
-        "VIPER | MVVM architecture",
-        "SCRUM working framework",
-        "RxJava/RxKotlin",
-        "Google's Dagger2 dependency injection",
-        "REST API",
-        "JWT authentication implementation",
-        "Working in SCRUM "
-      ]
+      companyLink: "https://www.vodafone.com/",
+      date: "Sep 2019 - Jan 2020",
+      desc: "Telecommunication / Mobile Services",
+      descBullets: []
     },
     {
-      role: "Project Manager",
-      company: "schdesign",
-      companyLink: "https://schdesign.hu/",
-      companylogo: require("./assets/logos/schdesign.png"),
-      date: "Mar 2019 – Jun 2020",
-      desc: "Managing all the projects, keeping deadlines, communicating with different customers",
-      descBullets: [
-        "More than 50 projects in one year",
-        "Responsible member of the management team",
-        "Introduced and updated Trello framework"
-      ]
-    },
-    {
-      role: "Junior Android and Web Developer",
-      company: "Lightport",
-      companyLink: "https://lightport.hu/",
+      role: "Software Engineer (part-time)",
+      company: "Lightport inc",
       companylogo: require("./assets/logos/lightport.png"),
-      date: "Feb 2019 – Sept 2019",
-      desc: "Developed a car leasing mobile application with Java and Kotlin for MKB bank and several web applications for customers",
-      descBullets: [
-        "Android application development with Kotlin and Java",
-        "MVVM architecture implementation",
-        "Static analysis setup with SonarQube",
-        "Web technologies",
-        "Mobile technologies",
-        "DevOps Continous integration setup with Docker, GitLab CI, and Jenkins"
-      ]
+      companyLink: "https://lightport.hu/index_en.shtml",
+      date: "Feb 2019 - Sep 2019",
+      desc: "Consulting",
+      descBullets: []
     }
   ]
 };
@@ -348,223 +261,23 @@ const bigProjects = {
   subtitle: "Here are some of the projects that I loved and I’m proud of",
   projects: [
     {
-      image: require("./assets/logos/ohhi.png"),
-      projectName: "ohhi",
-      projectSubTitle: "IOS / Android / Firebase",
-      projectDesc: `A social application where users can share their interests with people around them`,
-      technologies: ["Flutter", "Dart", "Typescript"],
-      descBullets: [
-        "Cloud Firestore and Cloud Functions for backend",
-        "Real time chat"
-      ],
-      footerLink: [
-        {
-          name: "Website",
-          url: "https://ohhi.world/"
-        },
-        {
-          name: "Instagram",
-          url: "https://www.instagram.com/ohhi_world/"
-        },
-        {
-          name: "Facebook",
-          url: "https://www.facebook.com/ohhi.world/"
-        }
-      ]
-    },
-    {
-      image: require("./assets/logos/votesess.png"),
-      projectName: "VoteSess",
-      projectSubTitle: "IOS / Android",
-      projectDesc: `A social media application where users can share their videos and pictures.`,
-      descBullets: ["Video / Photo", "Cross platform with React Native"],
-      technologies: ["React Native", "Typescript"],
-      footerLink: [
-        {
-          name: "Website",
-          url: "https://www.uniqpon.com/"
-        },
-        {
-          name: "Facebook",
-          url: "https://www.facebook.com/uniqpon/"
-        },
-        {
-          name: "App Store",
-          url: "https://apps.apple.com/us/app/votesess/id1588036776"
-        },
-        {
-          name: "Play Store",
-          url: "https://play.google.com/store/apps/details?id=com.votesess.app"
-        }
-      ]
-    },
-    {
-      image: require("./assets/logos/pizzasprint.png"),
-      projectName: "Pizza Sprint",
-      projectSubTitle: "Frontend / Backend / CMS",
-      projectDesc: `A restaurant website with online ordering system`,
-      descBullets: [
-        "Implementation of the Backend side with online payment and invoice system integrations",
-        "Content Management System for workers",
-        "Frontend for customers"
-      ],
-      technologies: ["React", "TypeScript", "NodeJs", "Express"],
-      footerLink: [
-        {
-          name: "Website",
-          url: "https://www.pizzasprint.hu/"
-        }
-      ]
-    },
-    {
-      image: require("./assets/logos/skillscom.webp"),
-      projectName: "SkillsCom",
-      projectSubTitle: "Android / IOS",
-      projectDesc: `A unique platform that allows students, vocational training institutions, educators and companies involved in dual training to find each other.`,
-      descBullets: ["Acted as the lead developer in mobile development"],
-      technologies: ["React Native", "Typescript"],
-      footerLink: [
-        {
-          name: "App Store",
-          url: "https://apps.apple.com/hu/app/skillscom/id1551926599"
-        },
-        {
-          name: "Play Store",
-          url: "https://play.google.com/store/apps/details?id=hu.ikk.skillscom"
-        }
-      ]
-    },
-
-    {
-      image: require("./assets/logos/my-vodafone.webp"),
-      projectName: "My Vodafone",
-      projectSubTitle: "Android",
-      projectDesc: `A mobile application to track Vodafone account`,
-      descBullets: [
-        "Applied modern architecture technologies and built modular application",
-        "Helped in communicating issues between the test and the development team"
-      ],
-      technologies: ["Kotlin"],
-      footerLink: [
-        {
-          name: "Play Store",
-          url: "https://play.google.com/store/apps/details?id=com.myvodafoneapp&hl=en&gl=US"
-        }
-      ]
-    },
-    {
-      image: require("./assets/logos/nivo.png"),
-      projectName: "Nivo",
-      projectSubTitle: "Web, Backend",
-      projectDesc: `A company product website and online ordering system`,
-      descBullets: [
-        `Created customized website for customers which allows price calculation depending on various pre-defined variables`,
-        `Created backend service that integrated the new frontend with the customer's CMS platforms`
-      ],
-      technologies: ["NextJs", "JavaScript", "NodeJs", "Express", "SCSS"],
-      footerLink: [
-        {
-          name: "Website",
-          url: "https://nivo.hu/"
-        }
-      ]
-    },
-
-    {
       image: require("./assets/logos/raspberry.png"),
-      projectName: "DrawBot",
-      projectSubTitle: "Raspberry Pi / Android",
-      projectDesc: `The user draws on the tablet while the robot will draw the same thing on a piece of paper. The robot is configurable with voltage, speed, real-time drawing settings through the application.`,
-      descBullets: [
-        "Created an Android application that is able to communicate with Raspberry Pi which controls the robot",
-        "Created Python program that listens to android instruction",
-        "Created communcation protocol between the android device and the robot"
-      ],
-
-      technologies: ["Kotlin", "Python"],
-      footerLink: []
-    },
-    {
-      image: require("./assets/logos/scanimal.webp"),
-      projectName: "Scanimal",
-      projectSubTitle: "IOS / Android / AWS",
-      projectDesc: `A community application for pet owners and their pets.`,
-      technologies: ["React Native", "Typescript", "NodeJs"],
-      descBullets: [
-        "Used AWS Lambda for serverless backend",
-        "Used AWS DynamoDb for NoSQL database",
-        "Fully functioning mobile application with authentication, location sharing and tracking and reporting functions"
-      ],
+      projectName: "E-paper calendar - Inkycal",
+      projectDesc: "Built a custom e-paper display using Raspberry Pi Zero W, PiSugar 3, and a Waveshare 7.5” E-Ink Display, integrating both hardware and software for a fully functional, low-power digital calendar solution.",
+      technologies: ["Python", "Google Calendar API"],
       footerLink: [
         {
-          name: "Website",
-          url: "https://appadvice.com/app/scanimal/1513796963"
-        },
-        {
-          name: "App Store",
-          url: "https://apps.apple.com/hu/app/scanimal/id1513796963"
-        },
-        {
-          name: "Play Store",
-          url: "https://play.google.com/store/apps/details?id=com.develops.scanimal"
+          name: "GitHub",
+          url: "https://github.com/aceinnolab/Inkycal"
         }
       ]
     },
     {
-      image: require("./assets/logos/unreal_engine.png"),
-      projectName: "City Simulator",
-      projectSubTitle: "Unreal Engine 4",
-      projectDesc: `Modelled a city with buildings, cars, and terrain roads in Unreal Engine 4`,
-      technologies: ["C#"],
+      image: require("./assets/logos/apple-watch.png"),
+      projectName: "Apple Watch Application Project",
+      projectDesc: "Developed a standalone Apple Watch application to track real-time electricity prices in Finland directly from the watch, with WidgetKit for live pricing data on the watch face.",
+      technologies: ["Swift", "WidgetKit"],
       footerLink: []
-    },
-    {
-      image: require("./assets/logos/card_scan.png"),
-      projectName: "ID Scanner",
-      projectSubTitle: "IOS / Android",
-      projectDesc: `An mobile application which allows the user to scan Covid Pass and show its validity`,
-      technologies: ["React Native", "Typescript"],
-      footerLink: []
-    },
-    {
-      image: require("./assets/logos/obnb.svg"),
-      projectName: "OBNB",
-      projectSubTitle: "IOS / Android",
-      projectDesc: `A frontend application where the user can see building informations.`,
-      descBullets: ["User interface visualization based on dynamic content"],
-      technologies: ["React Native", "Typescript"],
-      footerLink: []
-    },
-
-    {
-      image: require("./assets/logos/youtrack.png"),
-      projectName: "YouTrack Plugin",
-      projectSubTitle: "YouTrack Widget / Backend",
-      projectDesc: `A proprietary, commercial browser-based bug tracker, issue tracking system, and project management software.`,
-      descBullets: [
-        "Developed the server which calculates statistics about users such as efficiency and estimated work hours with the help of the backend."
-      ],
-      technologies: ["Javascript"],
-      footerLink: []
-    },
-    {
-      image: require("./assets/logos/smart-lizing.webp"),
-      projectName: "Smart Lizing",
-      projectSubTitle: "Android",
-      projectDesc: `
-      An application with a comprehensive database that helps users find the most suitable new or used car which also offers an online leasing calculation.`,
-      descBullets: [
-        "Converted Java - MVC architecture into MVVM architecture in Kotlin",
-        "Implemented new features",
-        "Optimized the code"
-      ],
-      technologies: ["Kotlin", "Java"],
-      footerLink: [
-        {
-          name: "Play Store",
-          url: "https://play.google.com/store/apps/details?id=com.lightport.mkb.smartcar.android&hl=en&gl=US"
-        }
-      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -574,33 +287,37 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Other Achievements🏆 "),
-  subtitle: "",
-
+  title: emoji("Achievements And Certifications 🏆 "),
+  subtitle:
+    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
   achievementsCards: [
     {
-      title: "Cybersecurity Hackathon 2020 1st place",
-      subtitle:
-        "Our team, SecurIT, had to find and solve problems about digital footprint.",
-      image: require("./assets/logos/oxo.png"),
+      title: "CompTIA Security+",
+      subtitle: "Issued by CompTIA, valid from July 2025 to July 2028.",
+      image: require("./assets/logos/comptia.png"),
       footerLink: [
         {
-          name: "News",
+          name: "Certification",
+          url: "https://www.credly.com/badges/44f8ccb2-14d1-4450-b494-ea9dd395077d/linked_in_profile"
+        }
+      ]
+    },
+    {
+      title: "Cybersecurity Hackathon Winner",
+      subtitle: "Awarded by National University of Public Service in 2020.",
+      image: require("./assets/logos/nke.jpeg"),
+      footerLink: [
+        {
+          name: "News Article",
           url: "http://www.bme.hu/hirek/20201021/Kiberbiztonsagi_versenyt_nyertek_muegyetemi_hallgatok"
         }
       ]
     },
     {
-      title: "Summer School Certificate",
-      subtitle:
-        "Certificate of Program Completion | Internet of Things and Business Transformation",
-      image: require("./assets/logos/kth.svg"),
-      footerLink: [
-        {
-          name: "Certificate",
-          url: require("./assets/docs/Martin_Huszti_Certificate.pdf")
-        }
-      ]
+      title: "Internet Of Things and Business transformation certificate",
+      subtitle: "Issued by KTH Royal Institute of Technology in August 2021.",
+      image: require("./assets/logos/kth.png"),
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -650,10 +367,8 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle: "Write me a PM in LinkedIn",
-  number: "",
-  email_address: ""
+  display: false,
+  title: emoji("Contacts")
 };
 
 // Twitter Section
@@ -663,7 +378,7 @@ const twitterDetails = {
   display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = true;
+const isHireable = false;
 
 export {
   illustration,
@@ -671,9 +386,9 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
+  workExperiences,
   educationInfo,
   techStack,
-  workExperiences,
   openSource,
   bigProjects,
   achievementSection,
@@ -683,5 +398,5 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
 };
