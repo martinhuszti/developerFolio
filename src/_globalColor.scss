@@ -2,55 +2,67 @@
 Certain colors are used for different and multiply types of elements. 
 For greater control over colors visit each components .scss file. */
 
+// New color scheme based on amber
+$primaryColor: #d97706; // Amber
+$secondaryColor: #f59e0b; // Lighter Amber
+$accentColor: #10b981; // Green for accents
+$textColorLight: #1f2937; // Dark gray for text in light mode
+$textColorDark: #f3f4f6; // Light gray for text in dark mode
+$backgroundColorLight: #ffffff; // White background for light mode
+$backgroundColorDark: #111827; // Very dark blue for dark mode
+$surfaceColorLight: #f9fafb; // Off-white for cards/surfaces in light mode
+$surfaceColorDark: #1f2937; // Dark gray for cards/surfaces in dark mode
+$errorColor: #ef4444; // Red for errors
+
 // button colors
-$buttonColor: #55198b;
-$buttonHover: #8c43ce;
-$topButtonHover: #000;
+$buttonColor: $primaryColor;
+$buttonHover: $secondaryColor;
+$topButtonHover: $primaryColor;
 
 // text colors light theme
-$titleColor: #000000;
-$textColor: #000000;
-$subTitle: #868e96;
-$cardSubtitle: #666666;
-$talkCardSubTitle: #7f8287;
-$blogCardTitleColor: #262626;
+$titleColor: $textColorLight;
+$textColor: $textColorLight;
+$subTitle: #6b7280;
+$cardSubtitle: #4b5563;
+$talkCardSubTitle: #4b5563;
+$blogCardTitleColor: $textColorLight;
 
 // text color dark theme
-$textColorDark: #ffffff;
+$textColorDark: $textColorDark;
 
 // toggle switch colors
-$toggleCheck: #2196f3;
+$toggleCheck: $primaryColor;
 $toggleSwitchSliderBG: #ccc;
 
 // githubRepo specific colors
-$githubRepoCardLanguageColorBG: #0000ff;
-$githubRepoCardColor: rgb(88, 96, 105);
-$githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
-$githubRepoCardRepoNameColor: rgb(36, 41, 46);
-$githubProfileCardLocationTS: #ffebcd;
-$githubProfileCardBorder: #6c63ff;
+$githubRepoCardLanguageColorBG: $primaryColor;
+$githubRepoCardColor: #6b7280;
+$githubRepoCardRepoCardStatsColor: #6b7280;
+$githubRepoCardRepoNameColor: $textColorLight;
+$githubProfileCardLocationTS: $secondaryColor;
+$githubProfileCardBorder: $primaryColor;
 
 // light background colors
-$lightBackground1: #fff;
-$lightBackground2: rgb(255, 255, 255);
-$lightBackground3: #f5f2f4;
-$blogCardContainerColor: #586069;
+$lightBackground1: $backgroundColorLight;
+$lightBackground2: $backgroundColorLight;
+$lightBackground3: $surfaceColorLight;
+$blogCardContainerColor: $surfaceColorDark;
 // dark background colors
-$darkBackground: #171c28;
+$darkBackground: $backgroundColorDark;
 
 // light theme box shadows
-$lightBoxShadowDark: rgba(0, 0, 0, 0.2);
+$lightBoxShadowDark: rgba(0, 0, 0, 0.15);
 $lightBoxShadow: rgba(0, 0, 0, 0.1);
-$lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
+$lightBoxShadowDarker: rgba(0, 0, 0, 0.2);
 
 // dark theme box shadows
-$darkBoxShadow: #d9dbdf;
-$darkBoxShadow2: #ffffff;
+$darkBoxShadow: rgba(255, 255, 255, 0.1);
+$darkBoxShadow2: rgba(255, 255, 255, 0.15);
 
 // linear gradients
 $experienceCardBlurredDivLG: linear-gradient(
-  rgba(0, 0, 0, 0.4),
-  rgba(0, 0, 0, 0.2)
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.3)
 );
 $experienceCardBannerLG: linear-gradient(
   rgba(0, 0, 0, 0.7),
@@ -58,24 +70,24 @@ $experienceCardBannerLG: linear-gradient(
 );
 
 // borders
-$progressBarBackground: rgb(243, 239, 239);
-$lightBorder1: rgba(211, 211, 211, 0.397);
-$educationCardBorder: #a9a7f9;
+$progressBarBackground: #e5e7eb;
+$lightBorder1: rgba(209, 213, 219, 0.5);
+$educationCardBorder: $primaryColor;
 
 // hovers
-$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.2);
+$achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.1);
 $blogCardHoverSmallColor: rgba(255, 255, 255, 0.8);
-$headerHoverBG: #f4f4f4;
-$contactDetailHoverTS: #b5b5b5;
+$headerHoverBG: $surfaceColorLight;
+$contactDetailHoverTS: #9ca3af;
 
 // misc backgrounds
-$progressBarSpanBG: #aaa5ff;
-$iconBackground: #333;
-$appHeaderBG: #282c34;
+$progressBarSpanBG: $primaryColor;
+$iconBackground: $textColorLight;
+$appHeaderBG: $backgroundColorDark;
 
 // misc colors
-$skillsColor: #645beb;
-$appLink: #09d3ac;
+$skillsColor: $primaryColor;
+$appLink: $accentColor;
 
 // social media icons
 $faceBook: #3b5998;

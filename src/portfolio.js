@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -24,7 +24,7 @@ const greeting = {
   title: "Hi, I'm Martin Huszti",
   subTitle:
     "Senior Mobile Developer with 6+ years of experience delivering Android and iOS solutions across healthcare, media, and R&D domains. Specialized in mobile architecture, clean code, and CI/CD automation, driving secure and scalable mobile solutions from concept to release.",
-  resumeLink: null, // Set to empty to hide the button
+  resumeLink: "custom", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -41,10 +41,18 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "Skills",
   skills: [
-    emoji("📱 Mobile Development: Android (Kotlin/Java), iOS (Swift), and cross-platform solutions with Flutter and React Native."),
-    emoji("📐 Architecture & Design: Expertise in Clean Architecture, MVVM/MVI, and dependency injection patterns for scalable, maintainable code."),
-    emoji("🚀 CI/CD & DevOps: Automating build, test, and deployment pipelines using GitLab CI, Docker, and Firebase."),
-    emoji("☁️ Backend & Cloud: Building and deploying backend services with Node.js and leveraging Firebase and AWS for cloud infrastructure.")
+    emoji(
+      "📱 Mobile Development: Android (Kotlin/Java), iOS (Swift), and cross-platform solutions with Flutter and React Native."
+    ),
+    emoji(
+      "📐 Architecture & Design: Expertise in Clean Architecture, MVVM/MVI, and dependency injection patterns for scalable, maintainable code."
+    ),
+    emoji(
+      "🚀 CI/CD & DevOps: Automating build, test, and deployment pipelines using GitLab CI, Docker, and Firebase."
+    ),
+    emoji(
+      "☁️ Backend & Cloud: Building and deploying backend services with Node.js and leveraging Firebase and AWS for cloud infrastructure."
+    )
   ],
 
   softwareSkills: [
@@ -263,7 +271,8 @@ const bigProjects = {
     {
       image: require("./assets/logos/raspberry.png"),
       projectName: "E-paper calendar - Inkycal",
-      projectDesc: "Built a custom e-paper display using Raspberry Pi Zero W, PiSugar 3, and a Waveshare 7.5” E-Ink Display, integrating both hardware and software for a fully functional, low-power digital calendar solution.",
+      projectDesc:
+        "Built a custom e-paper display using Raspberry Pi Zero W, PiSugar 3, and a Waveshare 7.5” E-Ink Display, integrating both hardware and software for a fully functional, low-power digital calendar solution.",
       technologies: ["Python", "Google Calendar API"],
       footerLink: [
         {
@@ -273,9 +282,10 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/logos/apple-watch.png"),
+      image: require("./assets/logos/apple-watch.jpg"),
       projectName: "Apple Watch Application Project",
-      projectDesc: "Developed a standalone Apple Watch application to track real-time electricity prices in Finland directly from the watch, with WidgetKit for live pricing data on the watch face.",
+      projectDesc:
+        "Developed a standalone Apple Watch application to track real-time electricity prices in Finland directly from the watch, with WidgetKit for live pricing data on the watch face.",
       technologies: ["Swift", "WidgetKit"],
       footerLink: []
     }
@@ -398,5 +408,5 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection,
+  resumeSection
 };
