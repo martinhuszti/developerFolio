@@ -107,7 +107,7 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Security Analysis of --- Android Applications",
+      schoolName: "Security Analysis of Android Applications",
       subHeader: "Master's Thesis",
       link: "https://www.utupub.fi/handle/10024/154737",
       duration: "Sep 2022",

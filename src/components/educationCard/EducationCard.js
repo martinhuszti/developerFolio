@@ -42,12 +42,7 @@ export default function EducationCard({school}) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {school.schoolName.split('---').map((line, index) => (
-                  <span key={index}>
-                    {line}
-                    <br />
-                  </span>
-                ))}
+                {school.schoolName}
               </a>
             ) : (
               <h5 className="education-text-school">{school.schoolName}</h5>
