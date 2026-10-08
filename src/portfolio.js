@@ -23,7 +23,7 @@ const greeting = {
   username: "Martin Huszti",
   title: "Hi, I'm Martin Huszti",
   subTitle:
-    "Senior Mobile Developer with 7+ years of experience delivering Android and iOS solutions across healthcare, media, and R&D domains. Specialized in mobile development but also comfortable with DevOps and full-stack development.",
+    "Senior Mobile Engineer based in Munich. I build full-stack Vehicle-to-Grid products, from Flutter apps to the backend, so car manufacturers can offer charging and discharging. Before that I led healthcare mobile apps across 8 countries, and I hold a master's in cyber security from the EIT Digital programme at the University of Trento and the University of Turku.",
   resumeLink: "custom", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -44,7 +44,7 @@ const skillsSection = {
       "📱 Mobile Development: Android (Kotlin/Java), iOS (Swift), and cross-platform solutions with Flutter and React Native."
     ),
     emoji(
-      "🚀 DevOps: Automating build, test, and deployment pipelines using GitLab-CI, Github Actions, Docker, Jenkins and Firebase."
+      "🚀 DevOps: Automating build, test, and deployment pipelines using GitLab CI, GitHub Actions, Docker, Jenkins, and Firebase."
     ),
     emoji(
       "☁️ Backend & Cloud: Building and deploying backend services with Node.js and leveraging Firebase and AWS for cloud infrastructure."
@@ -53,43 +53,43 @@ const skillsSection = {
 
   softwareSkills: [
     {
-      skillName: "android (kotlin/java)",
+      skillName: "Android (Kotlin/Java)",
       fontAwesomeClassname: "fab fa-android"
     },
     {
-      skillName: "ios (swift)",
+      skillName: "iOS (Swift)",
       fontAwesomeClassname: "fab fa-apple"
     },
     {
-      skillName: "react-native",
+      skillName: "React Native",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "flutter",
+      skillName: "Flutter",
       fontAwesomeClassname: "fas fa-mobile-alt"
     },
     {
-      skillName: "typescript",
+      skillName: "TypeScript",
       fontAwesomeClassname: "fab fa-js-square"
     },
     {
-      skillName: "gitlab-ci",
+      skillName: "GitLab CI",
       fontAwesomeClassname: "fab fa-gitlab"
     },
     {
-      skillName: "docker",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     },
     {
-      skillName: "firebase",
+      skillName: "Firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "node js",
+      skillName: "Node.js",
       fontAwesomeClassname: "fab fa-node-js"
     },
     {
-      skillName: "aws",
+      skillName: "AWS",
       fontAwesomeClassname: "fab fa-aws"
     }
   ],
@@ -107,7 +107,7 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Security Analysis of Android Applications",
+      schoolName: "Thesis: Security Analysis of Android Applications",
       subHeader: "Master's Thesis",
       link: "https://www.utupub.fi/handle/10024/154737",
       duration: "Sep 2022",
@@ -132,10 +132,8 @@ const educationInfo = {
       logo: require("./assets/logos/kth.png"),
       subHeader: "Summer School in IoT and Business Transformation",
       duration: "Aug 2021",
-      desc: "EIT Digital Summer School Program.",
-      descBullets: [
-        "Intensive two-week program focused on IoT and Business Transformation."
-      ]
+      desc: "Two-week EIT Digital summer school.",
+      descBullets: []
     },
     {
       schoolName: "University of Trento - Italy",
@@ -155,9 +153,6 @@ const educationInfo = {
       subHeader: "Bachelor's degree in Computer Engineering",
       duration: "Sep 2016 - Jan 2020",
       desc: "Specialized in Automation and Applied Informatics, focusing on mobile application development.",
-      descBullets: [
-        "Authored a thesis on Android application development, emphasizing modern architectures and cutting-edge technologies."
-      ]
     }
   ]
 };
@@ -189,16 +184,29 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Senior Mobile Engineer",
+      company: "The Mobility House Energy",
+      companylogo: require("./assets/logos/mobility-house-energy.jpg"),
+      companyLink: "https://mobilityhouse-energy.com/int_en/",
+      date: "Aug 2026 - Present",
+      desc: "Vehicle-to-Grid and energy markets",
+      descBullets: [
+        "Building full-stack features on AWS, from Flutter mobile apps to backend services.",
+        "Enabling car manufacturers such as Renault to offer Vehicle-to-Grid charging and discharging, with the infrastructure and a white-label mobile app.",
+        "Optimizing CI/CD pipelines for build, test, and release."
+      ]
+    },
+    {
       role: "Senior Mobile Developer",
       company: "BeeHealthy",
       companylogo: require("./assets/logos/beehealthy.png"),
       companyLink: "https://beehealthy.com/",
-      date: "Oct 2022 - Present",
-      desc: "Private and Public Healthcare SaaS",
+      date: "Oct 2022 - Aug 2026",
+      desc: "Healthcare SaaS for private clinics and public hospitals",
       descBullets: [
-        "Leading mobile development for Bookings, Surveys, and Attachment modules across 19 mobile apps in 8 countries with over 800,000 installs.",
-        "Implemented 3rd-party digital triage using KrakenD and Infermedica.",
-        "Optimized mobile CI/CD pipelines in Gitlab CI (static analysis, caching)."
+        "Leading mobile development for Bookings and Surveys across 19 mobile apps in 8 countries with over 800,000 installs.",
+        "Implemented third-party digital triage using KrakenD and Infermedica.",
+        "Optimized mobile CI/CD pipelines in GitLab CI (static analysis, caching)."
       ]
     },
     {
@@ -210,8 +218,8 @@ const workExperiences = {
       desc: "Secure Online Video Software",
       descBullets: [
         "Full-cycle development and deployment of the Dream Broker One mobile app.",
-        "Enhanced offline support, and real-time chat communication using WebSocket.",
-        "Introduced modern Android technologies such as Jetpack Compose, Dagger Hilt, Coroutines, Flows and WorkManager."
+        "Enhanced offline support and real-time chat communication using WebSocket.",
+        "Introduced modern Android technologies such as Jetpack Compose, Dagger Hilt, Coroutines, Kotlin Flow, and WorkManager."
       ]
     },
     {
@@ -223,7 +231,7 @@ const workExperiences = {
       desc: "Social Media Platform Startup",
       descBullets: [
         "Led Flutter mobile app development, leveraging GetX for state management, navigation, and dependency injection.",
-        "Built a headless Google Firebase backend using Cloud Firestore, Cloud Functions, and SMS-OTP authentication.",
+        "Built a Firebase backend using Cloud Firestore, Cloud Functions, and SMS-OTP authentication.",
         "Ensured real-time data synchronization, secure communication, and scalable architecture."
       ]
     },
@@ -235,9 +243,10 @@ const workExperiences = {
       date: "Jun 2020 - Nov 2021",
       desc: "Consulting",
       descBullets: [
-        "Delivered 10+ full-stack projects, led 5 mobile apps, integrated secure web payments, and built scalable AWS-based headless backends.",
-        "Cross-platform mobile development with React Native.",
-        "Backend services using Node.js, Express and MySQL."
+        "Delivered 10+ full-stack projects and led 5 mobile apps.",
+        "Integrated secure web payments and built scalable AWS backends.",
+        "Built cross-platform mobile apps with React Native.",
+        "Built backend services with Node.js, Express, and MySQL."
       ]
     },
     {
@@ -248,7 +257,7 @@ const workExperiences = {
       date: "Jan 2020 - Jun 2020",
       desc: "Research and Innovation",
       descBullets: [
-        "Led Android development for a research project optimized for tablets.",
+        "Built an Android research app for tablets 10 inches and larger.",
         "Designed custom communication protocols and enabled real-time TCP communication between Android and IoT devices.",
         "Developed robotic systems using Python with real-time communication."
       ]
@@ -260,7 +269,7 @@ const workExperiences = {
       companyLink: "https://www.vodafone.com/",
       date: "Sep 2019 - Jan 2020",
       desc: "Telecommunication / Mobile Services",
-      descBullets: ["Android mobile application development"]
+      descBullets: ["Reimplemented the new Vodafone app for Android."]
     },
     {
       role: "Software Engineer",
@@ -268,11 +277,9 @@ const workExperiences = {
       companylogo: require("./assets/logos/lightport.png"),
       companyLink: "https://lightport.hu/index_en.shtml",
       date: "Feb 2019 - Sep 2019",
-      desc: "Consulting",
+      desc: "Android apps for clients",
       descBullets: [
-        "Frontend development",
-        "Backend development",
-        "Mobile development"
+        "Built smaller Android apps, including a car-leasing app for a Hungarian bank."
       ]
     }
   ]
@@ -307,9 +314,9 @@ const bigProjects = {
     },
     {
       image: require("./assets/logos/apple-watch.jpg"),
-      projectName: "Apple Watch Application Project",
+      projectName: "Nord Pool prices on Apple Watch",
       projectDesc:
-        "Developed a standalone Apple Watch application to track real-time electricity prices in Finland directly from the watch, with WidgetKit for live pricing data on the watch face.",
+        "A standalone Apple Watch app that shows Nord Pool spot prices in Finland, so you can see when electricity is cheap. WidgetKit puts the live price on the watch face.",
       technologies: ["Swift", "WidgetKit"],
       footerLink: []
     }
@@ -323,10 +330,10 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Certifications and awards.",
   achievementsCards: [
     {
-      title: "ISTQB Certification - Foundation level v4.0",
+      title: "ISTQB Certified Tester Foundation Level v4.0",
       subtitle: "Issued by ISTQB, October 2025.",
       image: require("./assets/images/istqb.png"),
       footerLink: [
@@ -338,7 +345,7 @@ const achievementSection = {
     },
     {
       title: "CompTIA Security+",
-      subtitle: "Issued by CompTIA, July 2025",
+      subtitle: "Issued by CompTIA, July 2025.",
       image: require("./assets/logos/comptia.png"),
       footerLink: [
         {
@@ -348,7 +355,7 @@ const achievementSection = {
       ]
     },
     {
-      title: "Internet Of Things and Business transformation certificate",
+      title: "Internet of Things and Business Transformation Certificate",
       subtitle: "Issued by KTH Royal Institute of Technology in August 2021.",
       image: require("./assets/logos/kth.png"),
       footerLink: []
