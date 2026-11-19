@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "developerFolio",
+      "runtimeExecutable": "env",
+      "runtimeArgs": ["BROWSER=none", "npx", "react-scripts", "start"],
+      "port": 3000
+    }
+  ]
+}

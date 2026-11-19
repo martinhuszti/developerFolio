@@ -41,7 +41,7 @@ const skillsSection = {
   title: "Skills",
   skills: [
     emoji(
-      "📱 Mobile Development: Android (Kotlin/Java), iOS (Swift), and cross-platform solutions with Flutter and React Native."
+      "📱 Mobile Development: Android (Kotlin/Java), iOS and watchOS (Swift, SwiftUI, WidgetKit), and cross-platform apps with Kotlin Multiplatform (Compose Multiplatform), Flutter and React Native."
     ),
     emoji(
       "🚀 DevOps: Automating build, test, and deployment pipelines using GitLab CI, GitHub Actions, Docker, Jenkins, and Firebase."
@@ -57,8 +57,12 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-android"
     },
     {
-      skillName: "iOS (Swift)",
+      skillName: "iOS & watchOS (Swift)",
       fontAwesomeClassname: "fab fa-apple"
+    },
+    {
+      skillName: "Kotlin Multiplatform",
+      fontAwesomeClassname: "fas fa-layer-group"
     },
     {
       skillName: "React Native",
@@ -296,9 +300,66 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: emoji("Previous Projects"),
+  title: emoji("Personal Projects"),
   subtitle: "Here are some of the projects that I loved and I’m proud of",
   projects: [
+    {
+      image: require("./assets/logos/autopool.png"),
+      projectName: "AutoPool - shared car logbook",
+      projectDesc:
+        "A free logbook for a car you share with family, flatmates or colleagues. Everyone logs trips and refuels, and the app splits the fuel bill by the kilometres each person drove. It works offline without an account, with optional cloud sync across devices. Android and iOS are built from one Kotlin Multiplatform codebase, UI included.",
+      technologies: [
+        "Kotlin Multiplatform",
+        "Compose Multiplatform",
+        "SQLDelight",
+        "Koin",
+        "Firebase"
+      ],
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/app/id6822863108"
+        }
+      ]
+    },
+    {
+      image: require("./assets/logos/spot-price.png"),
+      projectName: "Spot Price - Nordic electricity prices",
+      projectDesc:
+        "Day-ahead electricity prices for the Nordics and Baltics on Apple Watch and iPhone. It shows the current price colour-coded from green to red, a chart of the coming hours, and puts the price on the watch face with complications.",
+      technologies: [
+        "Swift",
+        "SwiftUI",
+        "WidgetKit",
+        "Swift Charts",
+        "Open data APIs"
+      ],
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/app/id6823989227"
+        }
+      ]
+    },
+    {
+      image: require("./assets/logos/strompreis.png"),
+      projectName: "Strompreis - German electricity prices",
+      projectDesc:
+        "The German edition for Apple Watch and iPhone: day-ahead prices for Germany plus a green-power traffic light (Grünstrom-Ampel) that shows when the share of renewables in the grid is high.",
+      technologies: [
+        "Swift",
+        "SwiftUI",
+        "WidgetKit",
+        "Swift Charts",
+        "Energy-Charts API"
+      ],
+      footerLink: [
+        {
+          name: "App Store",
+          url: "https://apps.apple.com/app/id6825476595"
+        }
+      ]
+    },
     {
       image: require("./assets/logos/raspberry.png"),
       projectName: "E-paper calendar - Inkycal",
@@ -311,14 +372,6 @@ const bigProjects = {
           url: "https://github.com/aceinnolab/Inkycal"
         }
       ]
-    },
-    {
-      image: require("./assets/logos/apple-watch.jpg"),
-      projectName: "Nord Pool prices on Apple Watch",
-      projectDesc:
-        "A standalone Apple Watch app that shows Nord Pool spot prices in Finland, so you can see when electricity is cheap. WidgetKit puts the live price on the watch face.",
-      technologies: ["Swift", "WidgetKit"],
-      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true

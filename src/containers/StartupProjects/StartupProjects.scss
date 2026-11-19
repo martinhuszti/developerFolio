@@ -4,6 +4,20 @@
   max-width: 100%;
   height: auto;
   width: 250px;
+  border-radius: 22%; // app icons ship square; round them like the OS does
+}
+.project-tech {
+  margin-bottom: 0.75rem;
+}
+.project-tech span {
+  display: inline-block;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  padding: 0.1em 0.6em;
+  margin: 0 0.3rem 0.3rem 0;
+  border-radius: 4px;
+  border: 1px solid $lightBorder1;
+  background: rgba(107, 114, 128, 0.15);
 }
 .card-title {
   color: $titleColor;
@@ -24,7 +38,7 @@
   padding: 1.5rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
