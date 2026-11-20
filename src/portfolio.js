@@ -361,6 +361,10 @@ const bigProjects = {
         {
           name: "App Store",
           url: "https://apps.apple.com/app/id6825476595"
+        },
+        {
+          name: "Website",
+          url: "https://spotpricewatch.netlify.app/strompreis/"
         }
       ]
     },
