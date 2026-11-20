@@ -41,7 +41,7 @@ const skillsSection = {
   title: "Skills",
   skills: [
     emoji(
-      "📱 Mobile Development: Android (Kotlin/Java), iOS and watchOS (Swift, SwiftUI, WidgetKit), and cross-platform apps with Kotlin Multiplatform (Compose Multiplatform), Flutter and React Native."
+      "📱 Mobile Development: Android (Kotlin/Java), iOS and watchOS (Swift, SwiftUI, WidgetKit), and cross-platform apps with Kotlin Multiplatform (KMP), Compose Multiplatform, Flutter and React Native."
     ),
     emoji(
       "🚀 DevOps: Automating build, test, and deployment pipelines using GitLab CI, GitHub Actions, Docker, Jenkins, and Firebase."
@@ -61,7 +61,7 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-apple"
     },
     {
-      skillName: "Kotlin Multiplatform",
+      skillName: "Kotlin Multiplatform (KMP)",
       fontAwesomeClassname: "fas fa-layer-group"
     },
     {
@@ -338,6 +338,10 @@ const bigProjects = {
         {
           name: "App Store",
           url: "https://apps.apple.com/app/id6823989227"
+        },
+        {
+          name: "Website",
+          url: "https://spotpricewatch.netlify.app"
         }
       ]
     },
